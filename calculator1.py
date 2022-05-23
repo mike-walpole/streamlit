@@ -17,7 +17,7 @@ n = 12
 saved = deposit * (1 + r / n) ** (n * t) + contr * (((1 + r / n) ** (n * t) - 1) / (r / n));
 
 if target == 0: st.write('Your progress is', '0%')
-   else: st.write('Your progress is', saved / target * 100) 
+else: st.write('Your progress is', saved / target * 100) 
 
 
 
