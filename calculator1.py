@@ -16,6 +16,6 @@ n = 12
 
 saved = deposit * (1 + r / n) ** (n * t) + contr * (((1 + r / n) ** (n * t) - 1) / (r / n));
 
-progress = saved / progress * 100
+progress = saved / target * 100
 
 st.write('Your progress is', progress)
