@@ -16,9 +16,10 @@ n = 12
 
 saved = deposit * (1 + r / n) ** (n * t) + contr * (((1 + r / n) ** (n * t) - 1) / (r / n));
 
-progress = saved / target * 100
+if target == 0: st.write('Your progress is', '0%')
+   else: st.write('Your progress is', saved / target * 100) 
 
-st.write('Your progress is', progress)
+
 
 chart_data = pd.DataFrame(
      np.random.randn(20, 1),
