@@ -19,3 +19,9 @@ saved = deposit * (1 + r / n) ** (n * t) + contr * (((1 + r / n) ** (n * t) - 1)
 progress = saved / target * 100
 
 st.write('Your progress is', progress)
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 1),
+     columns=['a'])
+
+st.line_chart(chart_data)
