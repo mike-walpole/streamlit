@@ -10,7 +10,7 @@ deposit = st.number_input('How much have you saved already?')
 contr = st.number_input('How much can you save a month?')
 t = st.number_input('in how many years do you want to achieve your goal?')
 
-r = 5%
+r = 0.05
 n = 12
 
 
